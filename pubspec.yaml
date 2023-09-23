@@ -63,6 +63,7 @@ flutter:
     - assets/images/blob.png
     - assets/images/Mobile-login-Cristina.jpg
     - assets/images/Google_ G _Logo.svg.png
+    - assets/images/cat-icon-github-github-pages-user-computer-share-icon-source-code-black-png-clipart.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
