@@ -1,8 +1,7 @@
-import 'package:app/pages/register.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class Register extends StatelessWidget {
+  const Register({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +33,84 @@ class Login extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    const Column(
+                      children: [
+                        SizedBox(
+                          width: 400,
+                          height: 50,
+                          child: TextField(
+                            style: TextStyle(
+                              fontSize: 23,
+                            ),
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(
+                                Icons.person_2,
+                                color: Colors.white,
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  width: 1.5,
+                                  color: Color.fromARGB(255, 168, 141, 215),
+                                ),
+                              ),
+                              hintText: 'First Name',
+                              contentPadding: EdgeInsets.symmetric(
+                                horizontal: 25,
+                                vertical: 10,
+                              ),
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 23,
+                              ),
+                              fillColor: Color(0x00dfc4),
+                              filled: true,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    const Column(
+                      children: [
+                        SizedBox(
+                          width: 400,
+                          height: 50,
+                          child: TextField(
+                            style: TextStyle(
+                              fontSize: 23,
+                            ),
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(
+                                Icons.person_2,
+                                color: Colors.white,
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  width: 1.5,
+                                  color: Color.fromARGB(255, 168, 141, 215),
+                                ),
+                              ),
+                              hintText: 'Last Name',
+                              contentPadding: EdgeInsets.symmetric(
+                                horizontal: 25,
+                                vertical: 10,
+                              ),
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 23,
+                              ),
+                              fillColor: Color(0x00dfc4),
+                              filled: true,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     const Column(
                       children: [
                         SizedBox(
@@ -104,6 +181,39 @@ class Login extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(
+                      height: 20,
+                    ),
+                    const Column(
+                      children: [
+                        TextField(
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            prefixIcon: Icon(
+                              Icons.lock,
+                              color: Colors.white,
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                width: 1.5,
+                                color: Color.fromARGB(255, 168, 141, 215),
+                              ),
+                            ),
+                            hintText: 'Confirm the Password',
+                            contentPadding: EdgeInsets.symmetric(
+                              horizontal: 25,
+                              vertical: 10,
+                            ),
+                            hintStyle: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 23,
+                            ),
+                            fillColor: Color.fromARGB(0, 0, 223, 197),
+                            filled: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
                       height: 24,
                     ),
                     Column(
@@ -113,12 +223,12 @@ class Login extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color.fromARGB(255, 105, 58, 185),
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 144,
+                              horizontal: 137,
                               vertical: 10,
                             ),
                             alignment: Alignment.center,
                           ),
-                          child: const Text("Login",
+                          child: const Text("Sign In",
                               style: TextStyle(
                                 fontSize: 25,
                               )),
@@ -132,7 +242,7 @@ class Login extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         const Text(
-                          "Not a member?",
+                          "Have an account?",
                           style: TextStyle(
                             fontSize: 18,
                           ),
@@ -142,23 +252,14 @@ class Login extends StatelessWidget {
                         ),
                         InkWell(
                           child: const Text(
-                            "Sign in",
+                            "Log in",
                             style: TextStyle(
                               fontSize: 18,
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const Register();
-                                },
-                              ),
-                            );
-                          },
+                          onTap: () {},
                         )
                       ],
                     ),
