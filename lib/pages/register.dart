@@ -1,3 +1,4 @@
+import 'package:app/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatelessWidget {
@@ -259,7 +260,16 @@ class Register extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return Login();
+                                },
+                              ),
+                            );
+                          },
                         )
                       ],
                     ),
