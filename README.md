@@ -1,16 +1,5 @@
-# app
+# Login and Register UI Flutter
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![login](https://github.com/pape-medoune/Login-and-Register-UI-with-Flutter/assets/80828135/766b4220-35af-4638-9a45-8b6b6c3b5c56)
+![registerUI](https://github.com/pape-medoune/Login-and-Register-UI-with-Flutter/assets/80828135/efa26193-0799-4d04-acd1-3bb23e681f67)
